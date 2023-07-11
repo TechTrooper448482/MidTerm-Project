@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/category_home.dart';
 import 'package:gadget_marketplace/topbar.dart';
 import 'package:gadget_marketplace/search_home.dart';
 import 'package:gadget_marketplace/home_banner.dart';
@@ -18,7 +20,9 @@ class HomePage extends StatelessWidget {
           SafeArea(
               minimum: EdgeInsets.fromLTRB(20, 32, 20, 0), child: HomeSearchBar()),
           SafeArea(
-              minimum: EdgeInsets.fromLTRB(20, 16, 20, 0), child: PageBanner()),    
+              minimum: EdgeInsets.fromLTRB(20, 16, 20, 0), child: PageBanner()), 
+          SafeArea(
+              minimum: EdgeInsets.fromLTRB(20, 16, 20, 0), child: ProductCategory()),   
           
 
 
