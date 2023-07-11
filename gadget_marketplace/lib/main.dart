@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/color.dart';
 import 'package:gadget_marketplace/home.dart';
 
 void main() {
@@ -12,13 +13,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter ',
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
-         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-         useMaterial3: true,
+        primarySwatch: primaryColor,
+        fontFamily: "Roboto",
+        textTheme: const TextTheme(
+          titleSmall: TextStyle(color:Color.fromARGB(235, 214, 33, 33),fontSize:12.0, fontWeight: FontWeight.normal),
+          titleMedium:TextStyle(color:Color.fromARGB(228, 202, 30, 156),fontSize:16.0 ) ,
+          titleLarge: TextStyle(color:Color.fromARGB(244, 255, 155, 155),fontSize:20.0 )
+        ),
+        
+         
+          
+        
+
+        
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

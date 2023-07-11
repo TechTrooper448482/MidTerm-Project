@@ -10,11 +10,11 @@ class TopBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Column(
+           Column(
             children: [
               Text(
                 "Welcome",
-                style: TextStyle(fontSize: 12),
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               Text("Hammad Nadeem"),
             ],

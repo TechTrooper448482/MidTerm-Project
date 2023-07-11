@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/color.dart';
 
 class PageBanner extends StatelessWidget {
   const PageBanner({super.key});
@@ -39,10 +40,11 @@ class PageBanner extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.bold)),
                     ],
                   ),
-                  IconButton(
+                  SafeArea(minimum: const EdgeInsets.fromLTRB(0, 5, 0, 0), child:IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.arrow_circle_right_rounded))
-                ],
+                      icon: const Icon(Icons.arrow_circle_right_rounded),iconSize:40,color: primaryColor,)
+                 )
+                  ],
               ),
             ))
       ],
