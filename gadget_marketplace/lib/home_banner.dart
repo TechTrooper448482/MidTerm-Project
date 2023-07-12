@@ -22,29 +22,40 @@ class PageBanner extends StatelessWidget {
         SafeArea(
             minimum: const EdgeInsets.fromLTRB(10, 100, 10, 0),
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.1,
+              height: MediaQuery.of(context).size.height * 0.125,
               width: MediaQuery.of(context).size.width * 0.9,
               decoration: const BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(5))),
+                  borderRadius: BorderRadius.all(Radius.circular(12))),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Column(
+                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Listen to your favourite song',
-                          style: TextStyle(fontSize: 12)),
-                      Text('Discount 20% for \nheadphones!',
-                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      SafeArea(
+                        minimum: const EdgeInsets.fromLTRB(10, 10, 0, 4),
+                        child: Text('Listen to your favourite song',
+                            style: Theme.of(context).textTheme.titleSmall?.copyWith(fontSize: 12)),
+                      ),
+                      SafeArea(
+                        minimum: const EdgeInsets.fromLTRB(10, 0, 0, 5),
+                        child: Text('Discount 20% for \nheadphones!',
+                            style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold))),
+                      
                     ],
                   ),
-                  SafeArea(minimum: const EdgeInsets.fromLTRB(0, 5, 0, 0), child:IconButton(
-                      onPressed: () {},
-                      icon: const Icon(Icons.arrow_circle_right_rounded),iconSize:40,color: primaryColor,)
-                 )
-                  ],
+                  SafeArea(
+                      minimum: const EdgeInsets.fromLTRB(0, 12, 0, 0),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.arrow_circle_right_rounded),
+                        iconSize: 40,
+                        color: primaryColor,
+                      ))
+                ],
               ),
             ))
       ],

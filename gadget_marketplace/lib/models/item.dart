@@ -1,5 +1,3 @@
-
-
 class Gadgets {
   String product;
   List<String> imageUrl;
@@ -31,8 +29,7 @@ class Gadgets {
       price: 1299.00,
     ),
     Gadgets(
-        product:
-            "WH-1000XM5 Wireless Industry Leading Noise Canceling Headphones",
+        product: "Sony XM5 ",
         imageUrl: [
           "https://d13o3tuo14g2wf.cloudfront.net/thumbnails%2Flarge%2FAsset+Hierarchy%2FConsumer+Assets%2FAccessories%2FHeadphones%2FEarbuds%2F2022%2FWH-1000XM5%2FProduct+Images%2FBlack%2FeComm%2F1+WH-1000XM5_standard_black.png.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMTNvM3R1bzE0ZzJ3Zi5jbG91ZGZyb250Lm5ldC90aHVtYm5haWxzJTJGbGFyZ2UlMkZBc3NldCtIaWVyYXJjaHklMkZDb25zdW1lcitBc3NldHMlMkZBY2Nlc3NvcmllcyUyRkhlYWRwaG9uZXMlMkZFYXJidWRzJTJGMjAyMiUyRldILTEwMDBYTTUlMkZQcm9kdWN0K0ltYWdlcyUyRkJsYWNrJTJGZUNvbW0lMkYxK1dILTEwMDBYTTVfc3RhbmRhcmRfYmxhY2sucG5nLnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NTc2MjAwMH19fV19&Signature=dQbD17qiwNFZmA-o2EbuPsAIUkNgmclJSXU9q7eeoQAszZ8xdo0OpYqIiSP8EonF1NDrympe2~4d3fJXwc95DiR5cVTGxdWhfDkBey2F0k0cb4Qv6joezCiGAR7GZf3HI3REaSUI0~BWbqUVBguKWGUsjavvjbOayO6-jrqwu1D2h5T29CWrT8rGo~XG5KOgyuqYIqpxKPJ9U481wcU3pCBwzAfue-Ru6NCHhd-Y4-B7I93uvdbwH4qfSQh3iVM8oAi9ZjptYSaGPqiLlAP-P9zOHtK1riyyGDiq9ANMoqId5lp0tBqe1E9X40tnF6ZT~gUspuALI4yS8OZ~Nhu2rg__&Key-Pair-Id=K37BLT9C6HMMJ0",
           "https://d13o3tuo14g2wf.cloudfront.net/thumbnails%2Flarge%2FAsset+Hierarchy%2FConsumer+Assets%2FAccessories%2FHeadphones%2FEarbuds%2F2022%2FWH-1000XM5%2FProduct+Images%2FBlue%2FeComm%2F1_WH-1000XM5_standard_midnightblue.png.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMTNvM3R1bzE0ZzJ3Zi5jbG91ZGZyb250Lm5ldC90aHVtYm5haWxzJTJGbGFyZ2UlMkZBc3NldCtIaWVyYXJjaHklMkZDb25zdW1lcitBc3NldHMlMkZBY2Nlc3NvcmllcyUyRkhlYWRwaG9uZXMlMkZFYXJidWRzJTJGMjAyMiUyRldILTEwMDBYTTUlMkZQcm9kdWN0K0ltYWdlcyUyRkJsdWUlMkZlQ29tbSUyRjFfV0gtMTAwMFhNNV9zdGFuZGFyZF9taWRuaWdodGJsdWUucG5nLnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NTc2MjAwMH19fV19&Signature=ewGrPO-0XUn2TAWlLLNXBsKm52K4fBP9Zvq2is7B2dn8BdkgyB5QVJf3og~4-tJeOK4fTSxPGLCYn9EHF245Ya1-J7~OX5TfdUehSzoI7CRLjEhHkSl-FulhZKnDBc52MyIbKyiB1hIe5LP2kVu62cYRzwrqljlGZ2gLmM-fGnaI~HYnt3e5-bYOgUSmx7s8ywGmrhtDYt1y19z7DxY2Cw1L0skFGYoZg51q0UgCKEuBUBOIAJ~aa7aXdFk3K3iIg~~-dYbu6EADiddRg9kbNecdkICLPt5Loax3Uc22BB0s3vLKEvprTaImt7vOit64NHmOloBQwUGQZwp70bqg5Q__&Key-Pair-Id=K37BLT9C6HMMJ0",

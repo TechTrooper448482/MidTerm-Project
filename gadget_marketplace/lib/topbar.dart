@@ -10,13 +10,17 @@ class TopBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          
            Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const Padding(padding: EdgeInsets.only(top: 10)),
               Text(
                 "Welcome",
                 style: Theme.of(context).textTheme.titleSmall,
               ),
-              Text("Hammad Nadeem"),
+              Text("Hammad Nadeem",style: Theme.of(context).textTheme.titleMedium,),
             ],
           ),
           Row(
