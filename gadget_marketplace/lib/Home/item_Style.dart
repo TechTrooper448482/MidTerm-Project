@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:gadget_marketplace/models/item.dart';
+import 'package:gadget_marketplace/Home/rating.dart';
 
 class GadgetItem extends StatelessWidget {
   const GadgetItem({Key? key, required this.gadget}) : super(key: key);
@@ -17,9 +18,9 @@ class GadgetItem extends StatelessWidget {
             Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                      color: const Color.fromARGB(176, 158, 158, 158)),
-                  color: const Color(0xf6f6f6),
+                  
+                     
+                  color: Color.fromARGB(171, 252, 251, 252),
                 ),
                 padding: const EdgeInsets.fromLTRB(12, 16, 12, 0),
                 child: Column(
@@ -44,7 +45,8 @@ class GadgetItem extends StatelessWidget {
                             fit: BoxFit.contain,
                           ),
                         ),
-                        const Padding(padding: EdgeInsets.only(bottom: 20))
+                        const Padding(padding: EdgeInsets.only(bottom: 20)),
+                        ItemRatings(rating: gadget.product_rating)
                       ],
                     ),
                   ],

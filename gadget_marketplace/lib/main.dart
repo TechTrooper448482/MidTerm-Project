@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gadget_marketplace/color.dart';
-import 'package:gadget_marketplace/home.dart';
+
 import 'package:gadget_marketplace/page_zero.dart';
 
 void main() {
@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter ',
       theme: ThemeData(
         primarySwatch: primaryColor,
+        
         scaffoldBackgroundColor: Colors.white,
         fontFamily: "Roboto",
         textTheme: const TextTheme(
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.light,
           labelPadding: EdgeInsets.fromLTRB(10, 10, 10, 10),
           shape: CircleBorder(side: BorderSide(width: BorderSide.strokeAlignCenter,color: Colors.grey))
-        )
+        ),
+        hintColor: Colors.grey[400],
         
          
           

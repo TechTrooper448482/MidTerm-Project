@@ -12,7 +12,7 @@ class HomeSearchBar extends StatelessWidget {
       controller: textController,
       keyboardType: TextInputType.name,
       decoration: InputDecoration(
-        prefixIcon: const Icon(Icons.search_rounded), // Leading icon
+        prefixIcon: const Icon(Icons.search_rounded,size: 30,), // Leading icon
         hintText: "Search anything", // Placeholder text
         filled: true,
         fillColor: Colors.white, // Background color

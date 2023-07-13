@@ -4,7 +4,7 @@ class Gadgets {
   String description;
   String specs;
   double price;
-  // double quantity=0;
+  double product_rating;
 
   Gadgets({
     required this.product,
@@ -12,11 +12,12 @@ class Gadgets {
     required this.description,
     required this.specs,
     required this.price,
+    required this.product_rating
   });
 
   static List<dynamic> productList = [
     Gadgets(
-      product: "MacBook Air",
+      product: "MacBook Air 15\"",
       imageUrl: [
         "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-midnight-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479433",
         "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-starlight-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479450",
@@ -27,6 +28,7 @@ class Gadgets {
       specs:
           "8-Core CPU 10-Core GPU 8GB Unified Memory 256GB SSD Storagefootnote 16-core Neural Engine 15.3-inch Liquid Retina display with True Tone 1080p FaceTime HD camera MagSafe 3 charging port Two Thunderbolt  USB 4 ports Magic Keyboard with Touch ID Force Touch trackpad 35W Dual USB-C Port Compact Power Adapter",
       price: 1299.00,
+      product_rating: 4.9
     ),
     Gadgets(
         product: "Sony XM5 ",
@@ -39,7 +41,10 @@ class Gadgets {
             "WH-1000XM5 headphones feature intuitive touch control settings \n For everyday convenience, just Speak-to-Chat and Quick Attention mode stop your music and let in ambient sound\n Instant pause. Instant play.",
         specs:
             "Battery Timing Max.24hrs (NC ON) \n Charge Time \t Approx 3.5hrs\n Bluetooth \t version 5.2\n Range \t 32.81ft\n Noise Cancellation \t Yes",
-        price: 399.99),
+        price: 399.99,
+        product_rating: 4.6
+        ),
+        
     Gadgets(
         product: "Meta Quest Pro",
         imageUrl: [
@@ -51,7 +56,8 @@ class Gadgets {
             "Our most advanced headset yet. A whole new way to work, create and collaborate.\n World class counter balanced ergonomics meets sleek design to create a more comfortable headset, so you can wear it for longer periods of time. \n Full-color mixed reality, with resolution 4X higher compared to Quest 2, lets you work, create and collaborate in the virtual world while staying present in the physical world. Meta Quest Pro features stereoscopic mixed reality passthrough, which combines multiple sensor views to create a natural view of the world in 3D. Compared to monoscopic passthrough solutions, this results in a higher quality and more comfortable experience with better depth perception and fewer visual distortions for both close-up and room scale mixed reality scenarios.",
         specs:
             "Dimensions: 130 x 70 x 62mm \n Weight: 153g (per controller) \n Processor: Qualcomm Snapdragon 662 mobile processor per controller \n Controller Tracking: SLAM with 3 camera sensors per controller \n Built-in rechargeable batteries, up to 10 hours of controller battery life",
-        price: 999.99),
+        price: 999.99,
+        product_rating: 3.7),
     Gadgets(
         product: "Galaxy Tab S8 Ultra",
         imageUrl: [
@@ -62,7 +68,8 @@ class Gadgets {
             "Get lost in what you love and unleash your imagination with an ultra-large sAMOLED tablet that's the first of its kind. Your movies and content come to life in vivid detail like never before on an expansive 14.6\"sAMOLED screen. Now you have the power to game or edit videos in ultra-smooth clarity,thanks to a 120Hz refresh rate.You'll feel closer to the action when you hear every thrilling detail on quad speakers and rich Dolby Atmos surround sound tuned by AKG. Plus, discover new ways to boost productivity with an ultra-dynamic multi-window display that puts everything you need on one screen. With so many great capabilities, this screen simply must be experienced to be believed.",
         specs:
             "Connectivity\t Wi-Fi 6 , Bluetooth v5.0 \n Battery \t11,200mAh \n RAM + Storage \t 12GB (RAM) + 256GB \n Processor \t Qualcomm Snapdragon 8 Gen 1\n Display\t 14.6\" Super AMOLED   ",
-        price: 1199.99),
+        price: 1199.99,
+        product_rating: 4.8),
     Gadgets(
         product: "Xperia 1 V",
         imageUrl: [
@@ -75,7 +82,8 @@ class Gadgets {
             "Bright 6.5” 21:9 4K HDR OLED 120Hz3 wide display with improved Real-time HDR Drive. \n 4K HDR native 120fps video recording on all rear lenses 12GB RAM, 256GB ROM plus Micro-SD media slot, 5000mAh battery \n ",
         specs:
             "OS \t Android™ 13 (T)\n CPU \t Snapdragon® 8 Gen2 \n RAM\t 12GB \n ROM \t 256GB \n Speakers \t Stereo \n Dolby Atmos® \n ppi \t 643ppi \n REFRESH RATE \t 120Hz \n Battery \t 5000mAh   ",
-        price: 1399.99)
+        price: 1399.99,
+        product_rating: 4.5)
   ];
 
   // String getTotal() {
