@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gadget_marketplace/Home/home.dart';
+import 'package:gadget_marketplace/transaction.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -12,7 +13,7 @@ class _BottomNavState extends State<BottomNav> {
   List<Widget> pages = [
     const HomePage(),
     const Text('Work in Progress'),
-    const Text('Work in Progress'),
+    const TransactionPage(),
     const Text('Work in Progress'),
   ];
   int currentIndex = 0;

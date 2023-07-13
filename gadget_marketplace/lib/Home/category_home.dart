@@ -71,7 +71,7 @@ class ProductCategory extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Chip(label: Icon(Icons.apps_rounded)),
+                        const Chip(label: Icon(Icons.dashboard_outlined)),
                         const Padding(padding: EdgeInsets.only(top: 4)),
                         Text("View All",
                             style: Theme.of(context)
