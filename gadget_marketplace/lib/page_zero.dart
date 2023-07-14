@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gadget_marketplace/Home/home.dart';
 import 'package:gadget_marketplace/Transaction/transaction.dart';
+import 'package:gadget_marketplace/profile.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -14,7 +15,7 @@ class _BottomNavState extends State<BottomNav> {
     const HomePage(),
     const Text('Work in Progress'),
     const TransactionPage(),
-    const Text('Work in Progress'),
+    const ProfilePage(),
   ];
   int currentIndex = 0;
   @override
@@ -41,7 +42,7 @@ class _BottomNavState extends State<BottomNav> {
                 icon: Icon(Icons.person_3_outlined), label: 'Profile'),
           ],
           selectedItemColor: Theme.of(context).primaryColor,
-          unselectedItemColor: Color.fromARGB(251, 124, 121, 124),
+          unselectedItemColor: const Color.fromARGB(251, 124, 121, 124),
           onTap: (index) {
             setState(() {
               currentIndex = index;

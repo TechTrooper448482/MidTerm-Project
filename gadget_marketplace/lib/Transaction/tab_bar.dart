@@ -31,10 +31,10 @@ class TabBarShip extends StatelessWidget {
                     "My transactions",
                     style: TextStyle(color: Colors.black),
                   ),
-                  const Padding(padding: EdgeInsets.only(left: 134.0)),
+                  const Padding(padding: EdgeInsets.only(left: 104.0)),
                   IconButton(
                     onPressed: () {},
-                    icon: const Icon(Icons.filter_alt_outlined),
+                    icon: const Icon(Icons.filter_list_rounded),
                     iconSize: 30,
                     color: Colors.black,
                   ),

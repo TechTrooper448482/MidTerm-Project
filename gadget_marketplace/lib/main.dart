@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
             titleMedium:
                 TextStyle(color: Color.fromARGB(227, 5, 5, 5), fontSize: 16.0),
             titleLarge: TextStyle(
-                color: Color.fromARGB(244, 255, 155, 155), fontSize: 20.0)),
+                color: Color.fromARGB(255, 0, 0, 0), fontSize: 24.0)),
         chipTheme: const ChipThemeData(
             backgroundColor: Color(0xFCFBFC),
             brightness: Brightness.light,
@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
                 side: BorderSide(
                     width: BorderSide.strokeAlignCenter, color: Colors.grey))),
         hintColor: Colors.grey[400],
+        
       ),
       home: const BottomNav(),
     );
