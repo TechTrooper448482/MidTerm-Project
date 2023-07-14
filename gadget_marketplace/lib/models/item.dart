@@ -6,30 +6,28 @@ class Gadgets {
   double price;
   double product_rating;
 
-  Gadgets({
-    required this.product,
-    required this.imageUrl,
-    required this.description,
-    required this.specs,
-    required this.price,
-    required this.product_rating
-  });
+  Gadgets(
+      {required this.product,
+      required this.imageUrl,
+      required this.description,
+      required this.specs,
+      required this.price,
+      required this.product_rating});
 
   static List<dynamic> productList = [
     Gadgets(
-      product: "MacBook Air 15\"",
-      imageUrl: [
-        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-midnight-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479433",
-        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-starlight-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479450",
-        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-spacegray-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479428",
-        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-silver-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479266"
-      ],
-      description: "",
-      specs:
-          "8-Core CPU 10-Core GPU 8GB Unified Memory 256GB SSD Storagefootnote 16-core Neural Engine 15.3-inch Liquid Retina display with True Tone 1080p FaceTime HD camera MagSafe 3 charging port Two Thunderbolt  USB 4 ports Magic Keyboard with Touch ID Force Touch trackpad 35W Dual USB-C Port Compact Power Adapter",
-      price: 1299.00,
-      product_rating: 4.9
-    ),
+        product: "MacBook Air 15\"",
+        imageUrl: [
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-midnight-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479433",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-starlight-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479450",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-spacegray-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479428",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-silver-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479266"
+        ],
+        description: "",
+        specs:
+            "8-Core CPU 10-Core GPU 8GB Unified Memory 256GB SSD Storagefootnote 16-core Neural Engine 15.3-inch Liquid Retina display with True Tone 1080p FaceTime HD camera MagSafe 3 charging port Two Thunderbolt  USB 4 ports Magic Keyboard with Touch ID Force Touch trackpad 35W Dual USB-C Port Compact Power Adapter",
+        price: 1299.00,
+        product_rating: 4.9),
     Gadgets(
         product: "Sony XM5 ",
         imageUrl: [
@@ -42,14 +40,12 @@ class Gadgets {
         specs:
             "Battery Timing Max.24hrs (NC ON) \n Charge Time \t Approx 3.5hrs\n Bluetooth \t version 5.2\n Range \t 32.81ft\n Noise Cancellation \t Yes",
         price: 399.99,
-        product_rating: 4.6
-        ),
-        
+        product_rating: 4.6),
     Gadgets(
         product: "Meta Quest Pro",
         imageUrl: [
-          "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/312472703_410412547780138_4110539754808313637_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6825c5&_nc_ohc=uj964nbjglUAX91bX1r&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfACjc4wDhnrhaWvYnU9o1qzDms2TX1jFs2zADK8zD3ysw&oe=64B0EAFF",
-          "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/309279460_837712767385059_3055837329027405051_n.png?_nc_cat=101&ccb=1-7&_nc_sid=6825c5&_nc_ohc=gAGmI_THRD8AX9LmETE&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfC4WlV1RRNPXdFJ8glAUskkyuUpvNguRVj1bBjUU7wnhg&oe=64B0476B",
+          "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/312472703_410412547780138_4110539754808313637_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6825c5&_nc_ohc=dNs5aEx-c5AAX-rwSXq&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfCvoQgJamOtDMCzTIUkSP2tIXi-svlHfkMnEBy9318I5w&oe=64B6D9BF",
+          "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/309663085_1288587128578868_3145222164475793120_n.png?_nc_cat=101&ccb=1-7&_nc_sid=6825c5&_nc_ohc=5THPSMUQDUMAX-j5U4G&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfCANuVLuzRiohFJRqS069rN9dDC8QX_rEqk-iXW85dRvQ&oe=64B63D84",
           "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/305842532_1127991711455501_5280163670263847475_n.png?_nc_cat=107&ccb=1-7&_nc_sid=6825c5&_nc_ohc=DRbQC8TEMVwAX9eDPlx&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfAuONGSryRqwyDvEbOUNHHqZZ5-Oc-wfGhl4LKN7-YAzA&oe=64B15D4B"
         ],
         description:

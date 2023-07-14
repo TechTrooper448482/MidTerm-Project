@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gadget_marketplace/Home/home.dart';
-import 'package:gadget_marketplace/transaction.dart';
+import 'package:gadget_marketplace/Transaction/transaction.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -20,12 +20,15 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        border: Border(top: BorderSide(color: Colors.grey,style: BorderStyle.solid,width: 0.5)),
+      ),
       child: Scaffold(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: currentIndex,
           showUnselectedLabels: true,
-          elevation: 1,
+          elevation: 8,
           type: BottomNavigationBarType.fixed,
           items: const [
             BottomNavigationBarItem(

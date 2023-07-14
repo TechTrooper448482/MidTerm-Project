@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: primaryColor,
         scaffoldBackgroundColor: Colors.white,
-        fontFamily: "Roboto",
+        fontFamily: "Poppins",
         textTheme: const TextTheme(
             titleSmall: TextStyle(
                 color: Color.fromARGB(235, 124, 119, 119),

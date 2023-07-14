@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/Transaction/collected.dart';
+import 'package:gadget_marketplace/Transaction/to_receive.dart';
+import 'package:gadget_marketplace/Transaction/to_ship.dart';
 
 class TabBarShip extends StatelessWidget {
   const TabBarShip({super.key});
@@ -38,9 +41,15 @@ class TabBarShip extends StatelessWidget {
                 ]),
               ),
               body: const TabBarView(children: [
-                Icon(Icons.flight, size: 350),
-                Icon(Icons.directions_transit, size: 350),
-                Icon(Icons.directions_car, size: 350),
+                SafeArea(
+                    minimum: EdgeInsets.fromLTRB(10, 20, 10, 0),
+                    child: ToShip()),
+                SafeArea(
+                    minimum: EdgeInsets.fromLTRB(10, 20, 10, 0),
+                    child: ToReceive()),
+                SafeArea(
+                    minimum: EdgeInsets.fromLTRB(10, 20, 10, 0),
+                    child: Collected()),
               ]),
             )));
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gadget_marketplace/models/item.dart';
+
 
 class ItemRatings extends StatelessWidget {
   const ItemRatings({Key ? key, required this.rating}): super(key: key);
@@ -22,7 +22,7 @@ class ItemRatings extends StatelessWidget {
         children: [
            Icon(Icons.star_outline,color: Theme.of(context).primaryColor,),
           const Padding(padding: EdgeInsets.only(left: 12)),
-          Text("${rating.toString()}")
+          Text(rating.toString())
         ],
       )
     )
