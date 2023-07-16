@@ -3,7 +3,7 @@ import 'package:gadget_marketplace/Home/product_category.dart';
 import 'package:gadget_marketplace/Cart/cart.dart';
 import 'package:gadget_marketplace/Transaction/transaction.dart';
 import 'package:gadget_marketplace/color.dart';
-import 'package:gadget_marketplace/details.dart';
+import 'package:gadget_marketplace/Details/details.dart';
 import 'package:gadget_marketplace/models/item.dart';
 
 import 'package:gadget_marketplace/page_zero.dart';

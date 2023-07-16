@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:gadget_marketplace/description_tab.dart';
-import 'package:gadget_marketplace/image_details.dart';
-import 'package:gadget_marketplace/info.dart';
+import 'package:gadget_marketplace/Details/description_tab.dart';
+import 'package:gadget_marketplace/Details/image_details.dart';
+import 'package:gadget_marketplace/Details/info.dart';
 import 'package:gadget_marketplace/models/item.dart';
-import 'package:gadget_marketplace/review.dart';
-import 'package:gadget_marketplace/store.dart';
+import 'package:gadget_marketplace/Details/review.dart';
+import 'package:gadget_marketplace/Details/store.dart';
 
 class DetailsPage extends StatelessWidget {
   const DetailsPage({Key? key, required this.gadget}) : super(key: key);
