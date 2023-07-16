@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gadget_marketplace/Home/product_list.dart';
 import 'package:gadget_marketplace/models/item.dart';
 import 'package:gadget_marketplace/Transaction/transaction_style.dart';
 
@@ -15,8 +14,8 @@ class _ToShipState extends State<ToShip> {
 
   @override
   void initState() {
-   
-    toship = List.from(Gadgets.productList.values.expand((products) => products).toList());
+    toship = List.from(
+        Gadgets.productList.values.expand((products) => products).toList());
     super.initState();
   }
 
@@ -24,12 +23,12 @@ class _ToShipState extends State<ToShip> {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height,
-      child: 
-      ListView.builder(
+      child: ListView.builder(
         scrollDirection: Axis.vertical,
         itemCount: toship.length,
         shrinkWrap: false,
-        itemBuilder:(context, index) => CardStyle(gadget: toship[index]), ),
+        itemBuilder: (context, index) => CardStyle(gadget: toship[index]),
+      ),
     );
   }
 }

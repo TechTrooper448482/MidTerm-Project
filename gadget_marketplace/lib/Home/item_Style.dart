@@ -10,7 +10,9 @@ class GadgetItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, '/details', arguments: gadget);
+        },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -18,9 +20,7 @@ class GadgetItem extends StatelessWidget {
             Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  
-                     
-                  color: Color.fromARGB(171, 252, 251, 252),
+                  color: const Color.fromARGB(171, 252, 251, 252),
                 ),
                 padding: const EdgeInsets.fromLTRB(12, 16, 12, 0),
                 child: Column(
