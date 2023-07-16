@@ -10,14 +10,14 @@ class Orders extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(40),
         border: Border.all(color: Theme.of(context).primaryColor,width: 1),
-        color: Colors.white,
+        color: Colors.grey[50],
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.fromLTRB(20,10,10,20),
+            padding: const  EdgeInsets.fromLTRB(20,10,10,20),
             child: Text("My orders",style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),),
           ),
           Row(

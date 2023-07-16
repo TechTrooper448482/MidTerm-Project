@@ -14,9 +14,8 @@ class _ToReceiveState extends State<ToReceive> {
 
   @override
   void initState() {
-    int startIndex = 0;
-    int endIndex = 4;
-    toship = List.from(Gadgets.productList.getRange(startIndex, endIndex));
+    
+    toship = List.from(Gadgets.productList.values.expand((products) => products).toList());
     super.initState();
   }
 

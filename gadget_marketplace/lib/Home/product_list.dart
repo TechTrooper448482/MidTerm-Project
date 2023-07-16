@@ -13,9 +13,8 @@ class _ProductListState extends State<ProductList> {
   List<Gadgets> products = [];
   @override
   void initState() {
-    int startIndex = 0;
-    int endIndex = 4;
-    products = List.from(Gadgets.productList.getRange(startIndex, endIndex));
+  
+    products = List.from(Gadgets.productList.values.expand((products) => products).toList());
     super.initState();
   }
 

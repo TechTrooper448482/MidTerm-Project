@@ -12,6 +12,7 @@ class TabBarShip extends StatelessWidget {
         length: 3,
         child: Container(
             height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
             child: Scaffold(
               appBar: AppBar(
                 shape: const Border(
@@ -26,19 +27,21 @@ class TabBarShip extends StatelessWidget {
                       Tab(text: "To receive"),
                       Tab(text: "Collected"),
                     ]),
-                title: Row(children: [
-                  const Text(
-                    "My transactions",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  const Padding(padding: EdgeInsets.only(left: 104.0)),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.filter_list_rounded),
-                    iconSize: 30,
-                    color: Colors.black,
-                  ),
-                ]),
+                title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const Text(
+                        "My transactions",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.filter_list_rounded),
+                        iconSize: 30,
+                        color: Colors.black,
+                      ),
+                    ]),
               ),
               body: const TabBarView(children: [
                 SafeArea(

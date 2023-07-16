@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/Home/product_list.dart';
 import 'package:gadget_marketplace/models/item.dart';
 import 'package:gadget_marketplace/Transaction/transaction_style.dart';
 
@@ -14,9 +15,8 @@ class _ToShipState extends State<ToShip> {
 
   @override
   void initState() {
-    int startIndex = 0;
-    int endIndex = 4;
-    toship = List.from(Gadgets.productList.getRange(startIndex, endIndex));
+   
+    toship = List.from(Gadgets.productList.values.expand((products) => products).toList());
     super.initState();
   }
 

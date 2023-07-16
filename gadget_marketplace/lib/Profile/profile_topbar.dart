@@ -9,7 +9,7 @@ class ProfileTop extends StatelessWidget {
       height: 132,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(90),
-          color: Colors.white,
+          color: Colors.grey[50],
           border: Border.all(color: Theme.of(context).primaryColor, width: 1)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -39,6 +39,13 @@ class ProfileTop extends StatelessWidget {
                       .textTheme
                       .titleLarge
                       ?.copyWith(fontSize: 18)),
+              Text(
+                "0331-1234567 ",
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium
+                    ?.copyWith(fontSize: 14),
+              ),
             ],
           ),
           IconButton(

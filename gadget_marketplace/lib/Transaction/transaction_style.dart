@@ -28,7 +28,7 @@ class CardStyle extends StatelessWidget {
                       height: 50,
                       decoration:  BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Color.fromARGB(82, 221, 218, 218),
+                        color:const Color.fromARGB(82, 221, 218, 218),
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(0),
@@ -54,9 +54,9 @@ class CardStyle extends StatelessWidget {
               ],
             ),
 
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Container(
-              padding: EdgeInsets.fromLTRB(10,0,10,0),
+              padding:const EdgeInsets.fromLTRB(10,0,10,0),
               height: 30,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(25),

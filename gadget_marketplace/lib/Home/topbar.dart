@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/Cart/cart.dart';
 
 class TopBar extends StatelessWidget {
   const TopBar({super.key});
@@ -33,7 +34,9 @@ class TopBar extends StatelessWidget {
                   alignment: Alignment.center,
                   children: [
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/cart');
+                      },
                       icon: const Icon(Icons.shopping_cart_outlined),
                     ),
                     const Positioned(

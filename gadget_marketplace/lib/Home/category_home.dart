@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/models/item.dart';
 
 class ProductCategory extends StatelessWidget {
-  const ProductCategory({super.key});
+  const ProductCategory({Key? key, required this.product}) : super(key: key);
+  final Gadgets product;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 102 ,
+        height: 102,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,8 +27,11 @@ class ProductCategory extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        const Chip(
-                          label: Icon(Icons.laptop_mac),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const Chip(
+                            label: Icon(Icons.laptop_mac),
+                          ),
                         ),
                         const Padding(padding: EdgeInsets.only(top: 4)),
                         Text("PC",
@@ -38,7 +43,10 @@ class ProductCategory extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Chip(label: Icon(Icons.phone_iphone)),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const Chip(label: Icon(Icons.phone_iphone)),
+                        ),
                         const Padding(padding: EdgeInsets.only(top: 4)),
                         Text("Phone",
                             style: Theme.of(context)
@@ -49,7 +57,12 @@ class ProductCategory extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Chip(label: Icon(Icons.gamepad_outlined)),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const Chip(
+                            label: Icon(Icons.gamepad_outlined),
+                          ),
+                        ),
                         const Padding(padding: EdgeInsets.only(top: 4)),
                         Text("Gaming",
                             style: Theme.of(context)
@@ -60,7 +73,11 @@ class ProductCategory extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Chip(label: Icon(Icons.headset_outlined)),
+                        GestureDetector(
+                          onTap: () {},
+                          child:
+                              const Chip(label: Icon(Icons.headset_outlined)),
+                        ),
                         const Padding(padding: EdgeInsets.only(top: 4)),
                         Text("Headphone",
                             style: Theme.of(context)
@@ -71,7 +88,13 @@ class ProductCategory extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Chip(label: Icon(Icons.dashboard_outlined)),
+                        GestureDetector(
+                          onTap: () {
+                            
+                          },
+                          child:
+                              const Chip(label: Icon(Icons.dashboard_outlined)),
+                        ),
                         const Padding(padding: EdgeInsets.only(top: 4)),
                         Text("View All",
                             style: Theme.of(context)

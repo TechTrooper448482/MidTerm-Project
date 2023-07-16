@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gadget_marketplace/Home/home.dart';
 import 'package:gadget_marketplace/Transaction/transaction.dart';
-import 'package:gadget_marketplace/profile.dart';
+import 'package:gadget_marketplace/Profile/profile.dart';
+import 'package:gadget_marketplace/Cart/cart.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -13,7 +14,7 @@ class BottomNav extends StatefulWidget {
 class _BottomNavState extends State<BottomNav> {
   List<Widget> pages = [
     const HomePage(),
-    const Text('Work in Progress'),
+    const Text("In Progress"),
     const TransactionPage(),
     const ProfilePage(),
   ];
@@ -21,7 +22,7 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration:const  BoxDecoration(
         border: Border(top: BorderSide(color: Colors.grey,style: BorderStyle.solid,width: 0.5)),
       ),
       child: Scaffold(
