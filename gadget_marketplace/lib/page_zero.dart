@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gadget_marketplace/Home/home.dart';
 import 'package:gadget_marketplace/Transaction/transaction.dart';
 import 'package:gadget_marketplace/Profile/profile.dart';
+import 'package:gadget_marketplace/Saved/saved.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -13,7 +14,7 @@ class BottomNav extends StatefulWidget {
 class _BottomNavState extends State<BottomNav> {
   List<Widget> pages = [
     const HomePage(),
-    const Text("In Progress"),
+    const Saved(),
     const TransactionPage(),
     const ProfilePage(),
   ];

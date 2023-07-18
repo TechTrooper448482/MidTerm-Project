@@ -26,6 +26,7 @@ class _ToReceiveState extends State<ToReceive> {
       child: 
       ListView.builder(
         scrollDirection: Axis.vertical,
+        physics:const NeverScrollableScrollPhysics(),
         itemCount: toship.length,
         shrinkWrap: false,
         itemBuilder:(context, index) => CardStyle(gadget: toship[index]), ),

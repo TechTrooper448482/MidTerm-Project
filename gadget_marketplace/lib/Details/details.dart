@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/Details/buynow.dart';
 import 'package:gadget_marketplace/Details/description_tab.dart';
 import 'package:gadget_marketplace/Details/image_details.dart';
 import 'package:gadget_marketplace/Details/info.dart';
@@ -54,6 +55,10 @@ class DetailsPage extends StatelessWidget {
                   minimum: EdgeInsets.fromLTRB(20, 10, 20, 0), child: Store()),
               DescriptionTab(
                 gadget: gadget,
+              ),
+              const SafeArea(
+                minimum: EdgeInsets.fromLTRB(12, 0, 0, 12),
+                child: BuyNow(),
               )
             ],
           ),

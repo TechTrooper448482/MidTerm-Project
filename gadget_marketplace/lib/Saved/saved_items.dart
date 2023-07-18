@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:gadget_marketplace/models/item.dart';
 import 'package:gadget_marketplace/Home/rating.dart';
+import 'package:gadget_marketplace/models/saved.dart';
 
-class GadgetItem extends StatelessWidget {
-  const GadgetItem({Key? key, required this.gadget}) : super(key: key);
-  final Gadgets gadget;
+class SavedItem extends StatelessWidget {
+  const SavedItem({Key? key, required this.gadget}) : super(key: key);
+  final Saved gadget;
 
   @override
   Widget build(BuildContext context) {

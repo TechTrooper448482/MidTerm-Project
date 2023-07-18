@@ -38,6 +38,7 @@ class _ProductListState extends State<ProductList> {
                   child: GridView.count(
                     mainAxisSpacing: 20,
                     crossAxisSpacing: 12,
+                    physics:const NeverScrollableScrollPhysics(),
                     crossAxisCount: 2,
                     children: List.generate(products.length,
                         (index) => GadgetItem(gadget: products[index])),

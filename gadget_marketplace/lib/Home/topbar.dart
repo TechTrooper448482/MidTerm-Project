@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gadget_marketplace/Cart/cart.dart';
+
 
 class TopBar extends StatelessWidget {
   const TopBar({super.key});
@@ -18,11 +18,11 @@ class TopBar extends StatelessWidget {
               const Padding(padding: EdgeInsets.only(top: 10)),
               Text(
                 "Welcome",
-                style: Theme.of(context).textTheme.titleSmall,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
               Text(
                 "Hammad Nadeem",
-                style: Theme.of(context).textTheme.titleMedium,
+                style: Theme.of(context).textTheme.headlineLarge,
               ),
             ],
           ),

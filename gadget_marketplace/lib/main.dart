@@ -36,7 +36,13 @@ class MyApp extends StatelessWidget {
             titleMedium:
                 TextStyle(color: Color.fromARGB(227, 5, 5, 5), fontSize: 16.0),
             titleLarge:
-                TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 24.0)),
+                TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 24.0),
+            bodyMedium: TextStyle(),
+            headlineSmall: TextStyle(color: Color.fromARGB(235, 124, 119, 119),
+                fontSize: 14.0,),
+            headlineLarge:    TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 18.0) 
+                ),
+            
         chipTheme: const ChipThemeData(
             backgroundColor: Color(0xFCFBFC),
             brightness: Brightness.light,

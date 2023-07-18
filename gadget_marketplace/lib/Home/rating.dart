@@ -8,14 +8,14 @@ class ItemRatings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: 0,
-      left: 0,
+      top: 5,
+      left: 5,
       child: 
      Container(
         margin: const EdgeInsets.all(0),
         padding: const EdgeInsets.all(4),
         decoration: BoxDecoration(
-          color: Color.fromARGB(255, 252, 249, 249),
+          color: Colors.white,
           borderRadius: BorderRadius.circular(24),
         ),
         child: Row(
