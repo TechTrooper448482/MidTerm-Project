@@ -23,7 +23,7 @@ class GadgetItem extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                       color: const Color.fromARGB(174, 252, 251, 252),
                     ),
-                    padding: const EdgeInsets.fromLTRB(12, 16, 12, 0),
+                    padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [

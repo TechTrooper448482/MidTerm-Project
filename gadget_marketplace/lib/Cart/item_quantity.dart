@@ -11,9 +11,15 @@ class ItemQuantity extends StatefulWidget {
 }
 
 class _ItemQuantityState extends State<ItemQuantity> {
+  double totalCost = 0;
+  void updateTotalAmount(int quantity) {
+    setState(() {
+      totalCost = widget.gadget.price * quantity;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    int number = 1;
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -21,13 +27,14 @@ class _ItemQuantityState extends State<ItemQuantity> {
         Padding(
             padding: EdgeInsets.only(right: 36),
             child: QuantityBar(
-              quantity: number,
+              quantity: widget.gadget,
+              onQuantityChanged: updateTotalAmount,
             )),
-        Text("\$${12345}",
+            Text("\$ ${totalCost.toStringAsFixed(2)} ", 
             style: Theme.of(context)
                 .textTheme
                 .titleMedium
-                ?.copyWith(fontWeight: FontWeight.bold)),
+                ?.copyWith(fontWeight: FontWeight.bold))
       ],
     );
   }

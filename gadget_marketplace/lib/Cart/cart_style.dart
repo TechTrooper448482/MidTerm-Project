@@ -46,7 +46,7 @@ class CartStyle extends StatelessWidget {
                   ],
                 ),
                 SafeArea(
-                    minimum: const EdgeInsets.only(right: 20),
+                    minimum: const EdgeInsets.only(right: 4),
                     child: ItemQuantity(gadget: gadget)),
                 const SizedBox(
                   height: 8,

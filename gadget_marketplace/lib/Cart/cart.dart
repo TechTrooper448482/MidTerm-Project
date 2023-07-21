@@ -44,6 +44,8 @@ class _CartState extends State<Cart> {
                       scrollDirection: Axis.horizontal,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
+                        physics: const BouncingScrollPhysics(
+                            decelerationRate: ScrollDecelerationRate.normal),
                         itemCount: cart.length,
                         shrinkWrap: true,
                         itemBuilder: (context, index) =>

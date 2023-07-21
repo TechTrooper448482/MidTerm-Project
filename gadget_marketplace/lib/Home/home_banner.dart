@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/Home/product_category.dart';
 import 'package:gadget_marketplace/color.dart';
 
 class PageBanner extends StatelessWidget {
@@ -50,7 +51,9 @@ class PageBanner extends StatelessWidget {
                   SafeArea(
                       minimum: const EdgeInsets.fromLTRB(0, 12, 0, 0),
                       child: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) =>const Categorized(category: 'Headphones'),));
+                        },
                         icon: const Icon(Icons.arrow_circle_right_rounded),
                         iconSize: 40,
                         color: primaryColor,

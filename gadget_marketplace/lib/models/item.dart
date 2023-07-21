@@ -5,6 +5,7 @@ class Gadgets {
   String specs;
   double price;
   double product_rating;
+  int quantity;
 
   Gadgets(
       {required this.product,
@@ -12,7 +13,8 @@ class Gadgets {
       required this.description,
       required this.specs,
       required this.price,
-      required this.product_rating});
+      required this.product_rating,
+      required this.quantity});
 
   static Map<String, List<dynamic>> productList = {
     'PC': [
@@ -24,11 +26,42 @@ class Gadgets {
             "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-spacegray-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479428",
             "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-silver-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479266"
           ],
-          description: "",
+          description:
+              "16-core Neural Engine\n 15.3-inch Liquid Retina display with True Tone \n 1080p FaceTime HD camera \n MagSafe 3 charging port \n Two Thunderbolt / USB 4 ports \n Magic Keyboard with Touch ID \n Force Touch trackpad \n 35W Dual USB-C Port Compact Power Adapter",
           specs:
               "8-Core CPU 10-Core GPU 8GB Unified Memory 256GB SSD Storagefootnote 16-core Neural Engine 15.3-inch Liquid Retina display with True Tone 1080p FaceTime HD camera MagSafe 3 charging port Two Thunderbolt  USB 4 ports Magic Keyboard with Touch ID Force Touch trackpad 35W Dual USB-C Port Compact Power Adapter",
           price: 1299.00,
-          product_rating: 4.9),
+          product_rating: 4.9,
+          quantity: 0),
+      Gadgets(
+          product: "MacBook Pro 14",
+          imageUrl: [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1671304673229",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-silver-select-202301?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1671568460416"
+          ],
+          description:
+              "16-core Neural Engine\n 14-inch Liquid Retina XDR display\n Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port \n Magic Keyboard with Touch ID\n Force Touch trackpad\n 67W USB-C Power Adapter",
+          specs:
+              "10-Core CPU\n 16-Core GPU\n 16GB Unified Memory\n512GB SSD Storage",
+          price: 1999,
+          product_rating: 5.0,
+          quantity: 0),
+      Gadgets(
+          product: "Zenbook Pro 14 Duo",
+          imageUrl: [
+            "https://shop.asus.com/media/catalog/product/5/d/5d03bfa310a23fb3907aa6650141c419_5.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=439&width=439&canvas=439:439",
+            "https://shop.asus.com/media/catalog/product/a/3/a3423813ba37d46202ab579a85963a48_7.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=439&width=439&canvas=439:439",
+            "https://shop.asus.com/media/catalog/product/7/f/7f26ec01719590a785df9d093683662e_7.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=439&width=439&canvas=439:439",
+            "https://shop.asus.com/media/catalog/product/5/e/5eca7966b740390b52face72a240a347_7.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=439&width=439&canvas=439:439",
+            "https://shop.asus.com/media/catalog/product/4/8/48df71b102b4f259faa7dc1c028b4bfe_7.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=439&width=439&canvas=439:439"
+          ],
+          description:
+              "Next-generation ScreenPad Plus: A 12.7-inch, full-width secondary touchscreen with re-engineered tilt mechanism AAS Ultra, which increases the angle of tilt for comfortable touch operation and reduces the visual separation between ScreenPad Plus and the main touchscreen \n ASUS Pen 2.0 stylus support with 4096 pressure levels, four interchangeable pen tips and fast USB-C charging\n Latest 13th generation Intel® Core™ i9-13900H Processor 2.6 GHz (24MB Cache, up to 5.4 GHz, 14 cores, 20 Threads) and Intel Iris Xe graphics",
+          specs:
+              "Operating System: Windows 11 Home\n PC-Processor: Intel Core i9-13900h\n Memory: 32GB\n Storage:1 TB SSD\n Graphic Card: NVIDIA GeForce RTX 4060 8GB GDDR6",
+          price: 2399.99,
+          product_rating: 4.6,
+          quantity: 0),
     ],
     'Phone': [
       Gadgets(
@@ -44,22 +77,55 @@ class Gadgets {
           specs:
               "OS \t Android™ 13 (T)\n CPU \t Snapdragon® 8 Gen2 \n RAM\t 12GB \n ROM \t 256GB \n Speakers \t Stereo \n Dolby Atmos® \n ppi \t 643ppi \n REFRESH RATE \t 120Hz \n Battery \t 5000mAh   ",
           price: 1399.99,
-          product_rating: 4.5),
+          product_rating: 4.5,
+          quantity: 0),
+      Gadgets(
+          product: "iPhone 14 Pro Max",
+          imageUrl: [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841896",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841907",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841892",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841897"
+          ],
+          description:
+              "Dynamic Island bubbles up music, sports scores, phone calls, and so much more — without taking you away from what you\’re doing.\n The new Photonic Engine preserves even more image data to deliver brighter, more lifelike colors and beautifully detailed textures — in much less light. \n With iOS 16, your personalized Lock Screen is always glanceable, so you don’t have to tap to see your favorite widgets like Weather, Calendar, or Lunar Phase.",
+          specs:
+              "Display: 6.7 inch\n Storage: 256 GB \n Camera: Pro camera system 48MP Main | Ultra Wide Telephoto Photonic Engine for incredible detail and color Autofocus on TrueDepth front camera\n Battery: upto 29 hrs \n Chipset: A16 Bionic chip",
+          price: 1199,
+          product_rating: 4.9,
+          quantity: 0),
     ],
     'Gaming': [
       Gadgets(
-          product: "Meta Quest Pro",
+          product: "PlayStation®5 Console",
           imageUrl: [
-            "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/312472703_410412547780138_4110539754808313637_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6825c5&_nc_ohc=dNs5aEx-c5AAX-rwSXq&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfCvoQgJamOtDMCzTIUkSP2tIXi-svlHfkMnEBy9318I5w&oe=64B6D9BF",
-            "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/309663085_1288587128578868_3145222164475793120_n.png?_nc_cat=101&ccb=1-7&_nc_sid=6825c5&_nc_ohc=5THPSMUQDUMAX-j5U4G&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfCANuVLuzRiohFJRqS069rN9dDC8QX_rEqk-iXW85dRvQ&oe=64B63D84",
-            "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/305842532_1127991711455501_5280163670263847475_n.png?_nc_cat=107&ccb=1-7&_nc_sid=6825c5&_nc_ohc=DRbQC8TEMVwAX9eDPlx&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfAuONGSryRqwyDvEbOUNHHqZZ5-Oc-wfGhl4LKN7-YAzA&oe=64B15D4B"
+            "https://media.direct.playstation.com/is/image/sierialto/PS5-front-with-dualsense?",
+            "https://media.direct.playstation.com/is/image/sierialto/PS5-laying-down-flat?",
+            "https://media.direct.playstation.com/is/image/sierialto/PS5-box-shot?",
+            "https://media.direct.playstation.com/is/image/sierialto/playstation-5-standard-box-contents?"
           ],
           description:
-              "Our most advanced headset yet. A whole new way to work, create and collaborate.\n World class counter balanced ergonomics meets sleek design to create a more comfortable headset, so you can wear it for longer periods of time. \n Full-color mixed reality, with resolution 4X higher compared to Quest 2, lets you work, create and collaborate in the virtual world while staying present in the physical world. Meta Quest Pro features stereoscopic mixed reality passthrough, which combines multiple sensor views to create a natural view of the world in 3D. Compared to monoscopic passthrough solutions, this results in a higher quality and more comfortable experience with better depth perception and fewer visual distortions for both close-up and room scale mixed reality scenarios.",
+              "Haptic Feedback Responsive vibrations react to your in‑game choices and simulate environmental factors in select PS5 games.\n Capture your gameplay and share it with others on PlayStation™ Network or select social media apps. \n Harness the might of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do. \n Smooth and fluid high frame rate gameplay at up to 120fps for compatible games, with support for 120Hz output on 4K displays.",
           specs:
-              "Dimensions: 130 x 70 x 62mm \n Weight: 153g (per controller) \n Processor: Qualcomm Snapdragon 662 mobile processor per controller \n Controller Tracking: SLAM with 3 camera sensors per controller \n Built-in rechargeable batteries, up to 10 hours of controller battery life",
-          price: 999.99,
-          product_rating: 3.7),
+              "Storage: 825GB SSD \n Haptic Feedback, 3D Audio,Adaptive Triggers",
+          price: 499.99,
+          product_rating: 4.5,
+          quantity: 0),
+      Gadgets(
+          product: "Xbox Series X",
+          imageUrl: [
+            "https://assets.xboxservices.com/assets/fb/d2/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png?n=XBX_A-BuyBoxBGImage01-D.png",
+            "https://assets.xboxservices.com/assets/b2/51/b2518691-0175-4bf4-8c2e-9086e8a2c2db.png?n=XBX_A-BuyBoxBGImage02-D.png",
+            "https://assets.xboxservices.com/assets/39/66/39663ac6-e98d-44ce-8fc1-f15a796fe6d6.png?n=XBX_A-BuyBoxBGImage03-D.png",
+            "https://assets.xboxservices.com/assets/13/85/138560bf-8a3b-47d2-b32c-ab5a053a25ab.png?n=XBX_A-BuyBoxBGImage04-D.png"
+          ],
+          description:
+              "The sleek monolithic design of Xbox Series X is the result of combining hardware and software innovations with intentional engineering to achieve the zenith of speed and performance.\n New generation console. New generation games. Embark on new adventures the way they’re meant to be experienced on the Xbox Series X.",
+          specs:
+              "Display: 4k\n Refresh Rate: 120hz\n Audio: Dolby Atmos\n Storage: 1TB + Expandable to 1TB",
+          price: 499.99,
+          product_rating: 4.4,
+          quantity: 0)
     ],
     'Headphones': [
       Gadgets(
@@ -74,7 +140,24 @@ class Gadgets {
           specs:
               "Battery Timing Max.24hrs (NC ON) \n Charge Time \t Approx 3.5hrs\n Bluetooth \t version 5.2\n Range \t 32.81ft\n Noise Cancellation \t Yes",
           price: 399.99,
-          product_rating: 4.6),
+          product_rating: 4.6,
+          quantity: 0),
+      Gadgets(
+          product: "AirPods Max",
+          imageUrl: [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-spacegray-202011?wid=470&hei=556&fmt=png-alpha&.v=1604709508000",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-pink-202011?wid=470&hei=556&fmt=png-alpha&.v=1604022365000",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-green-202011?wid=470&hei=556&fmt=png-alpha&.v=1604022364000",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=470&hei=556&fmt=png-alpha&.v=1604021221000",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-skyblue-202011?wid=470&hei=556&fmt=png-alpha&.v=1604022365000"
+          ],
+          description:
+              "Personalized Spatial Audio with dynamic head tracking \n Active Noise Cancellation and Transparency mode\n Up to 20 hours of listening time with a single charge\n Smart Case ",
+          specs:
+              "Spatial Audio \n ANC: Active Noise Cancellation\n Battery: 20 hrs",
+          price: 549.00,
+          product_rating: 4.3,
+          quantity: 0),
     ],
     'Tablets': [
       Gadgets(
@@ -88,28 +171,23 @@ class Gadgets {
           specs:
               "Connectivity\t Wi-Fi 6 , Bluetooth v5.0 \n Battery \t11,200mAh \n RAM + Storage \t 12GB (RAM) + 256GB \n Processor \t Qualcomm Snapdragon 8 Gen 1\n Display\t 14.6\" Super AMOLED   ",
           price: 1199.99,
-          product_rating: 4.8),
+          product_rating: 4.8,
+          quantity: 0),
+      Gadgets(
+          product: "iPad Pro",
+          imageUrl: [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-space-gray?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667595007854",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-space-gray_AV1?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667595008716",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-silver?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1667595007333",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-silver_AV1?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1667595003455"
+          ],
+          description:
+              "12.9” Liquid Retina XDR display Best and brightest.\n Cameras Capture and connect On a deeper level\n The LiDAR Scanner measures how long it takes light to reflect back from objects, so it can create a depth map of any space you’re in and unlock immersive AR experiences.",
+          specs:
+              "Display: 12.9 inch\n Camera: Luidar, 12MP,10MP..\n Connectivity: Wi-Fi6E, 5G\n Sotrage: 512GB",
+          price: 1399.00,
+          product_rating: 4.9,
+          quantity: 0)
     ]
   };
-
-  static List<dynamic> getAllProducts() {
-    return productList.values.expand((products) => products).toList();
-  }
-
-  static List<dynamic> getProductsByCategory(String category) {
-    if (category == 'All') {
-      return getAllProducts();
-    } else {
-      return productList[category] ?? [];
-    }
-  }
-
-  String getTotalAmount(int quantity) {
-    return (quantity * price).toStringAsFixed(2);
-  }
-
-  // String getTotal() {
-  //    double quantity;
-  //   return (price * quantity).toStringAsFixed(2);
-  // }
 }

@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/models/item.dart';
 
 class QuantityBar extends StatefulWidget {
-  const QuantityBar({Key? key, required this.quantity}) : super(key: key);
-  final int quantity;
+  const QuantityBar(
+      {Key? key, required this.quantity, required this.onQuantityChanged})
+      : super(key: key);
+  final Gadgets quantity;
+  final Function(int) onQuantityChanged;
 
   @override
   State<QuantityBar> createState() => _QuantityBarState();
@@ -13,12 +17,15 @@ class _QuantityBarState extends State<QuantityBar> {
 
   @override
   void initState() {
-    quantity = widget.quantity;
+    quantity = widget.quantity.quantity;
     super.initState();
   }
 
-  String getTotalAmount(double price) {
-    return (quantity * price).toStringAsFixed(2);
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      quantity = newQuantity;
+    });
+    widget.onQuantityChanged(quantity);
   }
 
   @override
@@ -28,11 +35,9 @@ class _QuantityBarState extends State<QuantityBar> {
         children: [
           IconButton(
               onPressed: () {
-                setState(() {
-                  if (quantity > 0) {
-                    quantity--;
-                  }
-                });
+                if (quantity > 0) {
+                  updateQuantity(quantity - 1);
+                }
               },
               icon: const Icon(Icons.remove_circle_outline_rounded)),
           Text("${quantity}",
@@ -42,9 +47,7 @@ class _QuantityBarState extends State<QuantityBar> {
                   ?.copyWith(fontWeight: FontWeight.bold)),
           IconButton(
               onPressed: () {
-                setState(() {
-                  quantity++;
-                });
+                updateQuantity(quantity + 1);
               },
               icon: const Icon(Icons.add_circle_outline_rounded))
         ],

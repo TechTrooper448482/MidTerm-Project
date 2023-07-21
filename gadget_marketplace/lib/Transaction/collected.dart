@@ -14,8 +14,8 @@ class _CollectedState extends State<Collected> {
 
   @override
   void initState() {
-    
-    toship = List.from(Gadgets.productList.values.expand((products) => products).toList());
+    toship = List.from(
+        Gadgets.productList.values.expand((products) => products).toList());
     super.initState();
   }
 
@@ -23,13 +23,14 @@ class _CollectedState extends State<Collected> {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height,
-      child: 
-      ListView.builder(
+      child: ListView.builder(
         scrollDirection: Axis.vertical,
-        physics:const NeverScrollableScrollPhysics(),
+        physics: const BouncingScrollPhysics(
+            decelerationRate: ScrollDecelerationRate.normal),
         itemCount: toship.length,
         shrinkWrap: false,
-        itemBuilder:(context, index) => CardStyle(gadget: toship[index]), ),
+        itemBuilder: (context, index) => CardStyle(gadget: toship[index]),
+      ),
     );
   }
 }

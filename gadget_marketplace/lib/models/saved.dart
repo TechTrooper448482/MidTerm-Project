@@ -17,18 +17,18 @@ class Saved {
   static Map<String, List<dynamic>> productList = {
     'PC': [
       Saved(
-          product: "MacBook Air 15\"",
-          imageUrl: [
-            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-midnight-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479433",
-            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-starlight-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479450",
-            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-spacegray-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479428",
-            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-silver-select-202306?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1684518479266"
-          ],
-          description: "",
-          specs:
-              "8-Core CPU 10-Core GPU 8GB Unified Memory 256GB SSD Storagefootnote 16-core Neural Engine 15.3-inch Liquid Retina display with True Tone 1080p FaceTime HD camera MagSafe 3 charging port Two Thunderbolt  USB 4 ports Magic Keyboard with Touch ID Force Touch trackpad 35W Dual USB-C Port Compact Power Adapter",
-          price: 1299.00,
-          product_rating: 4.9),
+        product: "MacBook Pro 14 (M2 pro)",
+        imageUrl: [
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1671304673229",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-silver-select-202301?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1671568460416"
+        ],
+        description:
+            "16-core Neural Engine\n 14-inch Liquid Retina XDR display\n Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port \n Magic Keyboard with Touch ID\n Force Touch trackpad\n 67W USB-C Power Adapter",
+        specs:
+            "10-Core CPU\n 16-Core GPU\n 16GB Unified Memory\n512GB SSD Storage",
+        price: 1999,
+        product_rating: 5.0,
+      ),
     ],
     'Phone': [
       Saved(
@@ -48,18 +48,20 @@ class Saved {
     ],
     'Gaming': [
       Saved(
-          product: "Meta Quest Pro",
-          imageUrl: [
-            "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/312472703_410412547780138_4110539754808313637_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6825c5&_nc_ohc=dNs5aEx-c5AAX-rwSXq&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfCvoQgJamOtDMCzTIUkSP2tIXi-svlHfkMnEBy9318I5w&oe=64B6D9BF",
-            "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/309663085_1288587128578868_3145222164475793120_n.png?_nc_cat=101&ccb=1-7&_nc_sid=6825c5&_nc_ohc=5THPSMUQDUMAX-j5U4G&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfCANuVLuzRiohFJRqS069rN9dDC8QX_rEqk-iXW85dRvQ&oe=64B63D84",
-            "https://scontent.fkhi15-1.fna.fbcdn.net/v/t39.8562-6/305842532_1127991711455501_5280163670263847475_n.png?_nc_cat=107&ccb=1-7&_nc_sid=6825c5&_nc_ohc=DRbQC8TEMVwAX9eDPlx&_nc_ht=scontent.fkhi15-1.fna&oh=00_AfAuONGSryRqwyDvEbOUNHHqZZ5-Oc-wfGhl4LKN7-YAzA&oe=64B15D4B"
-          ],
-          description:
-              "Our most advanced headset yet. A whole new way to work, create and collaborate.\n World class counter balanced ergonomics meets sleek design to create a more comfortable headset, so you can wear it for longer periods of time. \n Full-color mixed reality, with resolution 4X higher compared to Quest 2, lets you work, create and collaborate in the virtual world while staying present in the physical world. Meta Quest Pro features stereoscopic mixed reality passthrough, which combines multiple sensor views to create a natural view of the world in 3D. Compared to monoscopic passthrough solutions, this results in a higher quality and more comfortable experience with better depth perception and fewer visual distortions for both close-up and room scale mixed reality scenarios.",
-          specs:
-              "Dimensions: 130 x 70 x 62mm \n Weight: 153g (per controller) \n Processor: Qualcomm Snapdragon 662 mobile processor per controller \n Controller Tracking: SLAM with 3 camera sensors per controller \n Built-in rechargeable batteries, up to 10 hours of controller battery life",
-          price: 999.99,
-          product_rating: 3.7),
+        product: "PlayStation®5 Console",
+        imageUrl: [
+          "https://media.direct.playstation.com/is/image/sierialto/PS5-front-with-dualsense?",
+          "https://media.direct.playstation.com/is/image/sierialto/PS5-laying-down-flat?",
+          "https://media.direct.playstation.com/is/image/sierialto/PS5-box-shot?",
+          "https://media.direct.playstation.com/is/image/sierialto/playstation-5-standard-box-contents?"
+        ],
+        description:
+            "Haptic Feedback Responsive vibrations react to your in‑game choices and simulate environmental factors in select PS5 games.\n Capture your gameplay and share it with others on PlayStation™ Network or select social media apps. \n Harness the might of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do. \n Smooth and fluid high frame rate gameplay at up to 120fps for compatible games, with support for 120Hz output on 4K displays.",
+        specs:
+            "Storage: 825GB SSD \n Haptic Feedback, 3D Audio,Adaptive Triggers",
+        price: 499.99,
+        product_rating: 4.5,
+      ),
     ],
     'Headphones': [
       Saved(
@@ -78,17 +80,20 @@ class Saved {
     ],
     'Tablets': [
       Saved(
-          product: "Galaxy Tab S8 Ultra",
-          imageUrl: [
-            "https://image-us.samsung.com/us/galaxy-tab-s8/configurator/02-TabS8-Ultra-KV-Configurator-DT-633x475.jpg",
-            "https://image-us.samsung.com/SamsungUS/PIM/SDSAC-4790-Sustainability-TabS8F-DT-720x540.jpg"
-          ],
-          description:
-              "Get lost in what you love and unleash your imagination with an ultra-large sAMOLED tablet that's the first of its kind. Your movies and content come to life in vivid detail like never before on an expansive 14.6\"sAMOLED screen. Now you have the power to game or edit videos in ultra-smooth clarity,thanks to a 120Hz refresh rate.You'll feel closer to the action when you hear every thrilling detail on quad speakers and rich Dolby Atmos surround sound tuned by AKG. Plus, discover new ways to boost productivity with an ultra-dynamic multi-window display that puts everything you need on one screen. With so many great capabilities, this screen simply must be experienced to be believed.",
-          specs:
-              "Connectivity\t Wi-Fi 6 , Bluetooth v5.0 \n Battery \t11,200mAh \n RAM + Storage \t 12GB (RAM) + 256GB \n Processor \t Qualcomm Snapdragon 8 Gen 1\n Display\t 14.6\" Super AMOLED   ",
-          price: 1199.99,
-          product_rating: 4.8),
+        product: "iPad Pro",
+        imageUrl: [
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-space-gray?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667595007854",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-space-gray_AV1?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667595008716",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-silver?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1667595007333",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-finish-select-202212-12-9inch-silver_AV1?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1667595003455"
+        ],
+        description:
+            "12.9” Liquid Retina XDR display Best and brightest.\n Cameras Capture and connect On a deeper level\n The LiDAR Scanner measures how long it takes light to reflect back from objects, so it can create a depth map of any space you’re in and unlock immersive AR experiences.",
+        specs:
+            "Display: 12.9 inch\n Camera: Luidar, 12MP,10MP..\n Connectivity: Wi-Fi6E, 5G\n Sotrage: 512GB",
+        price: 1399.00,
+        product_rating: 4.9,
+      )
     ]
   };
 }

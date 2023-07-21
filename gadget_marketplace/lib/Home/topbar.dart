@@ -21,7 +21,7 @@ class TopBar extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
               Text(
-                "Hammad Nadeem",
+                "Jeff Bezos",
                 style: Theme.of(context).textTheme.headlineLarge,
               ),
             ],

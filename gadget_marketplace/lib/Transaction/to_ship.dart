@@ -25,7 +25,8 @@ class _ToShipState extends State<ToShip> {
       height: MediaQuery.of(context).size.height,
       child: ListView.builder(
         scrollDirection: Axis.vertical,
-        physics:const NeverScrollableScrollPhysics(),
+        physics: const BouncingScrollPhysics(
+            decelerationRate: ScrollDecelerationRate.normal),
         itemCount: toship.length,
         shrinkWrap: false,
         itemBuilder: (context, index) => CardStyle(gadget: toship[index]),

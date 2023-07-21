@@ -3,25 +3,47 @@ import 'package:gadget_marketplace/Home/item_Style.dart';
 import 'package:gadget_marketplace/models/item.dart';
 
 class Categorized extends StatelessWidget {
-  const Categorized({Key?key, required this.product}): super(key: key);
-  final Gadgets product;
+  const Categorized({Key? key, required this.category}) : super(key: key);
+  final String category;
 
   @override
   Widget build(BuildContext context) {
-    List<Gadgets> product = [];
+    final gadgets = Gadgets.productList[category] ?? [];
     return Scaffold(
-      body: Container(
-        height: MediaQuery.of(context).size.height * 0.8,
-        child: Column(
-          children: [
-            Expanded(child: GridView.count(
-              crossAxisCount: 2,
-              children: List.generate(product.length, (index) => GadgetItem(gadget: product[index]))
-            ),
-            )
-            
-          ],
-        )),
-    );
+        appBar: AppBar(
+          title: Text(
+            " $category",
+            style: Theme.of(context)
+                .textTheme
+                .headlineLarge
+                ?.copyWith(fontWeight: FontWeight.bold),
+          ),
+        ),
+        body: Padding(
+          padding:const EdgeInsets.fromLTRB(10, 0, 10, 0),
+          child: Container(
+              height: MediaQuery.of(context).size.height * 0.8,
+              decoration: BoxDecoration(
+                  border: Border(
+                      top: BorderSide(color: Colors.grey.shade200, width: 1))),
+              child: Column(
+                children: [
+                  const Padding(padding: EdgeInsets.fromLTRB(10, 10, 10, 0)),
+                  Expanded(
+                    child: GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2, crossAxisSpacing: 8),
+                      physics: const NeverScrollableScrollPhysics(),
+                      itemCount: gadgets.length,
+                      itemBuilder: (context, index) {
+                        final gadget = gadgets[index];
+                        return GadgetItem(gadget: gadget);
+                      },
+                    ),
+                  )
+                ],
+              )),
+        ));
   }
 }

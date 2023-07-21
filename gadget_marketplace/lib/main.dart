@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gadget_marketplace/Home/product_category.dart';
 import 'package:gadget_marketplace/Cart/cart.dart';
+import 'package:gadget_marketplace/Home/view.dart';
 import 'package:gadget_marketplace/Transaction/transaction.dart';
 import 'package:gadget_marketplace/color.dart';
 import 'package:gadget_marketplace/Details/details.dart';
@@ -38,11 +38,12 @@ class MyApp extends StatelessWidget {
             titleLarge:
                 TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 24.0),
             bodyMedium: TextStyle(),
-            headlineSmall: TextStyle(color: Color.fromARGB(235, 124, 119, 119),
-                fontSize: 14.0,),
-            headlineLarge:    TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 18.0) 
-                ),
-            
+            headlineSmall: TextStyle(
+              color: Color.fromARGB(235, 124, 119, 119),
+              fontSize: 14.0,
+            ),
+            headlineLarge:
+                TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 18.0)),
         chipTheme: const ChipThemeData(
             backgroundColor: Color(0xFCFBFC),
             brightness: Brightness.light,
@@ -55,11 +56,10 @@ class MyApp extends StatelessWidget {
       home: const BottomNav(),
       routes: {
         '/cart': (context) => const Cart(),
-        '/product_category': (context) => Categorized(
-              product: ModalRoute.of(context)?.settings.arguments as Gadgets,
-            ),
         '/cart/transaction': (context) => const TransactionPage(),
-        '/details':(context) => DetailsPage(gadget: ModalRoute.of(context)?.settings.arguments as Gadgets),
+        '/details': (context) => DetailsPage(
+            gadget: ModalRoute.of(context)?.settings.arguments as Gadgets),
+        '/view': (context) => const ViewAll(),
       },
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gadget_marketplace/Home/product_category.dart';
 import 'package:gadget_marketplace/models/item.dart';
 
 class ProductCategory extends StatelessWidget {
@@ -28,7 +29,14 @@ class ProductCategory extends StatelessWidget {
                     Column(
                       children: [
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      Categorized(category: 'PC'),
+                                ));
+                          },
                           child: const Chip(
                             label: Icon(Icons.laptop_mac),
                           ),
@@ -44,7 +52,14 @@ class ProductCategory extends StatelessWidget {
                     Column(
                       children: [
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Categorized(category: 'Phone'),
+                                ));
+                          },
                           child: const Chip(label: Icon(Icons.phone_iphone)),
                         ),
                         const Padding(padding: EdgeInsets.only(top: 4)),
@@ -58,7 +73,14 @@ class ProductCategory extends StatelessWidget {
                     Column(
                       children: [
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Categorized(category: 'Gaming'),
+                                ));
+                          },
                           child: const Chip(
                             label: Icon(Icons.gamepad_outlined),
                           ),
@@ -74,7 +96,14 @@ class ProductCategory extends StatelessWidget {
                     Column(
                       children: [
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Categorized(category: 'Headphones'),
+                                ));
+                          },
                           child:
                               const Chip(label: Icon(Icons.headset_outlined)),
                         ),
@@ -90,7 +119,7 @@ class ProductCategory extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            
+                            Navigator.pushNamed(context, '/view');
                           },
                           child:
                               const Chip(label: Icon(Icons.dashboard_outlined)),

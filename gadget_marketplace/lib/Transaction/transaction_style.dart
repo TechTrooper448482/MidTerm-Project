@@ -24,7 +24,11 @@ class CardStyle extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/details',arguments: gadget);
+                      },
+                      child:Container(
                       height: 50,
                       decoration:  BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
@@ -38,7 +42,9 @@ class CardStyle extends StatelessWidget {
                           fit: BoxFit.contain,
                         ),
                       ),
+                    ), 
                     ),
+                    
                     const Padding(padding: EdgeInsets.symmetric(horizontal: 12.0)),
                     Text(
                       " ${gadget.product}",

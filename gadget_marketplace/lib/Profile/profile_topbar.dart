@@ -34,7 +34,7 @@ class ProfileTop extends StatelessWidget {
                     .titleMedium
                     ?.copyWith(fontSize: 14),
               ),
-              Text("Hammad Nadeem",
+              Text("Jeff Bezos",
                   style: Theme.of(context)
                       .textTheme
                       .titleLarge

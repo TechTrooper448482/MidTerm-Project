@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Gadgets product = Gadgets(description: "",imageUrl: [],specs: '',price:0 ,product: '',product_rating: 0);
+    Gadgets product = Gadgets(description: "",imageUrl: [],specs: '',price:0 ,product: '',product_rating: 0,quantity: 0);
     return  SingleChildScrollView(
       child: Column(
         children: [

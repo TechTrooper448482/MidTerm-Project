@@ -2,19 +2,45 @@ import 'package:flutter/material.dart';
 import 'package:gadget_marketplace/Home/item_Style.dart';
 import 'package:gadget_marketplace/models/item.dart';
 
-class ProductList extends StatefulWidget {
-  const ProductList({Key? key}) : super(key: key);
+class ProductByCategory extends StatefulWidget {
+  const ProductByCategory({Key?key}):super(key: key);
 
   @override
-  State<ProductList> createState() => _ProductListState();
+  State<ProductByCategory> createState() => _ProductByCategoryState();
 }
 
-class _ProductListState extends State<ProductList> {
+class _ProductByCategoryState extends State<ProductByCategory> {
+   List<Gadgets> products = [];
+List<Gadgets> getProductsByCategory(String category) {
+  switch (category) {
+    case 'All':
+      return [];
+    case 'PC':
+      return getProductsWithCategory('PC');
+    case 'Phone':
+      return getProductsWithCategory('Phone');
+    case 'Gaming':
+      return getProductsWithCategory('Gaming');
+    case 'Headphone':
+      return getProductsWithCategory('Headphone');
+    default:
+      return [];
+  }
+}
+
+List<Gadgets> getProductsWithCategory(String category) {
   List<Gadgets> products = [];
-  @override
+  for (var product in products) {
+    if (Key == category) {
+      products.add(product);
+    }
+  }
+  return products;
+}
+   @override
   void initState() {
-    products = List.from(
-        Gadgets.productList.values.expand((products) => products).toList());
+  
+    products = List.from(Gadgets.productList.values.expand((products) => products).toList());
     super.initState();
   }
 
@@ -30,7 +56,7 @@ class _ProductListState extends State<ProductList> {
         ),
         const Padding(padding: EdgeInsets.only(top: 12)),
         Container(
-            height: MediaQuery.of(context).size.height * 0.35,
+            height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: Column(
               children: [
@@ -38,8 +64,7 @@ class _ProductListState extends State<ProductList> {
                   child: GridView.count(
                     mainAxisSpacing: 20,
                     crossAxisSpacing: 12,
-                    physics: const BouncingScrollPhysics(
-                        decelerationRate: ScrollDecelerationRate.normal),
+                    physics:const NeverScrollableScrollPhysics(),
                     crossAxisCount: 2,
                     children: List.generate(products.length,
                         (index) => GadgetItem(gadget: products[index])),
@@ -48,6 +73,6 @@ class _ProductListState extends State<ProductList> {
               ],
             ))
       ],
-    );
+    ); 
   }
 }

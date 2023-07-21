@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
-
 class Checkout extends StatelessWidget {
-  const Checkout({super.key});
+  const Checkout({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    double shipping = 24.99;
+    double discount = 149.99;
+    double grossTotal = 5000;
+    double totalBill = grossTotal - discount + shipping;
+
     return Container(
       padding: const EdgeInsets.fromLTRB(8, 16, 12, 0),
       height: MediaQuery.of(context).size.height * 0.47,
@@ -19,7 +23,7 @@ class Checkout extends StatelessWidget {
               style: Theme.of(context).textTheme.titleMedium,
             ),
             Text(
-              "123 ",
+              "\$ ${grossTotal.toStringAsFixed(2)}",
               style: Theme.of(context)
                   .textTheme
                   .titleMedium
@@ -38,7 +42,7 @@ class Checkout extends StatelessWidget {
               style: Theme.of(context).textTheme.titleMedium,
             ),
             Text(
-              "-50 ",
+              "-${discount} ",
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
@@ -55,7 +59,7 @@ class Checkout extends StatelessWidget {
               " Shipping",
               style: Theme.of(context).textTheme.titleMedium,
             ),
-            Text("5 ",
+            Text("$shipping",
                 style: Theme.of(context)
                     .textTheme
                     .titleMedium
@@ -82,7 +86,7 @@ class Checkout extends StatelessWidget {
                           " Total Bill",
                           style: Theme.of(context).textTheme.titleLarge,
                         ),
-                        Text("\$ 5453 ",
+                        Text("\$ ${totalBill.toStringAsFixed(2)} ",
                             style: Theme.of(context)
                                 .textTheme
                                 .titleLarge
