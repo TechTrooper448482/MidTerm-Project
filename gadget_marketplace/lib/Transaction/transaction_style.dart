@@ -45,7 +45,7 @@ class CardStyle extends StatelessWidget {
                     ), 
                     ),
                     
-                    const Padding(padding: EdgeInsets.symmetric(horizontal: 12.0)),
+                    const Padding(padding: EdgeInsets.symmetric(horizontal: 4.0)),
                     Text(
                       " ${gadget.product}",
                       style: Theme.of(context).textTheme.titleSmall,
@@ -76,7 +76,7 @@ class CardStyle extends StatelessWidget {
                 children: [
                   Icon(Icons.local_shipping_outlined,color: Theme.of(context).primaryColor,),
                   
-                  Text("Your purchase is being delivered to you Location",style: Theme.of(context).textTheme.titleSmall?.copyWith(fontSize: 12,color: Colors.black),),
+                  Text("Your purchase is being delivered to you Location",style: Theme.of(context).textTheme.titleSmall?.copyWith(fontSize: 8,color: Colors.black),),
                   const Icon(Icons.arrow_forward,color: Colors.black,)
 
                 ],

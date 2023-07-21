@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
           const SafeArea(
               minimum: EdgeInsets.fromLTRB(10, 16, 10, 0), child: PageBanner()),
           SafeArea(
-              minimum:const EdgeInsets.fromLTRB(20, 20, 20, 0),
+              minimum:const EdgeInsets.fromLTRB(20, 20, 18, 0),
               child: ProductCategory(product:product)),
           const SafeArea(
               minimum: EdgeInsets.fromLTRB(20, 16, 20, 0),

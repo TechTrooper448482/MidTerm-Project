@@ -9,7 +9,7 @@ class ProductCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 102,
+        height: 112,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,

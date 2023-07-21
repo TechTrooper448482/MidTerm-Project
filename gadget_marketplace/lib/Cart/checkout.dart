@@ -11,8 +11,8 @@ class Checkout extends StatelessWidget {
     double totalBill = grossTotal - discount + shipping;
 
     return Container(
-      padding: const EdgeInsets.fromLTRB(8, 16, 12, 0),
-      height: MediaQuery.of(context).size.height * 0.47,
+      padding: const EdgeInsets.fromLTRB(8, 16, 16, 0),
+      height: MediaQuery.of(context).size.height * 0.7,
       child: Column(children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -67,7 +67,7 @@ class Checkout extends StatelessWidget {
           ],
         ),
         const SizedBox(
-          height: 20,
+          height: 160,
         ),
         Padding(
             padding: const EdgeInsets.fromLTRB(8, 36, 8, 0),

@@ -21,7 +21,7 @@ class PageBanner extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(10))),
         ),
         SafeArea(
-            minimum: const EdgeInsets.fromLTRB(10, 100, 10, 0),
+            minimum: const EdgeInsets.fromLTRB(10, 124, 10, 0),
             child: Container(
               height: MediaQuery.of(context).size.height * 0.125,
               width: MediaQuery.of(context).size.width * 0.9,
