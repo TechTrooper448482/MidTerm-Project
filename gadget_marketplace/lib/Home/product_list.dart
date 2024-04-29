@@ -20,34 +20,36 @@ class _ProductListState extends State<ProductList> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          "Popular products",
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
-        const Padding(padding: EdgeInsets.only(top: 12)),
-        Container(
-            height: MediaQuery.of(context).size.height * 0.35,
-            width: MediaQuery.of(context).size.width,
-            child: Column(
-              children: [
-                Expanded(
-                  child: GridView.count(
-                    mainAxisSpacing: 20,
-                    crossAxisSpacing: 12,
-                    physics: const BouncingScrollPhysics(
-                        decelerationRate: ScrollDecelerationRate.normal),
-                    crossAxisCount: 2,
-                    children: List.generate(products.length,
-                        (index) => GadgetItem(gadget: products[index])),
-                  ),
-                )
-              ],
-            ))
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Popular products",
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
+          const Padding(padding: EdgeInsets.only(top: 12)),
+          SizedBox(
+              height: MediaQuery.of(context).size.height * 0.35,
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                children: [
+                  Expanded(
+                    child: GridView.count(
+                      mainAxisSpacing: 20,
+                      crossAxisSpacing: 12,
+                      physics: const BouncingScrollPhysics(
+                          decelerationRate: ScrollDecelerationRate.normal),
+                      crossAxisCount: 2,
+                      children: List.generate(products.length,
+                          (index) => GadgetItem(gadget: products[index])),
+                    ),
+                  )
+                ],
+              ))
+        ],
+      ),
     );
   }
 }

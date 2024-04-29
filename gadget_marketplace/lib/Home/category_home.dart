@@ -8,8 +8,9 @@ class ProductCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        height: 112,
+    return SingleChildScrollView(
+      child: SizedBox(
+        height: 120,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,11 +32,12 @@ class ProductCategory extends StatelessWidget {
                         GestureDetector(
                           onTap: () {
                             Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      Categorized(category: 'PC'),
-                                ));
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    const Categorized(category: 'PC'),
+                              ),
+                            );
                           },
                           child: const Chip(
                             label: Icon(Icons.laptop_mac),
@@ -62,12 +64,16 @@ class ProductCategory extends StatelessWidget {
                           },
                           child: const Chip(label: Icon(Icons.phone_iphone)),
                         ),
-                        const Padding(padding: EdgeInsets.only(top: 4)),
-                        Text("Phone",
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleSmall
-                                ?.copyWith(fontSize: 12)),
+                        const Padding(
+                          padding: EdgeInsets.only(top: 4),
+                        ),
+                        Text(
+                          "Phone",
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleSmall
+                              ?.copyWith(fontSize: 12),
+                        ),
                       ],
                     ),
                     Column(
@@ -108,11 +114,13 @@ class ProductCategory extends StatelessWidget {
                               const Chip(label: Icon(Icons.headset_outlined)),
                         ),
                         const Padding(padding: EdgeInsets.only(top: 4)),
-                        Text("Headphone",
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleSmall
-                                ?.copyWith(fontSize: 12)),
+                        Text(
+                          "Headphone",
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleSmall
+                              ?.copyWith(fontSize: 12),
+                        ),
                       ],
                     ),
                     Column(
@@ -137,6 +145,8 @@ class ProductCategory extends StatelessWidget {
               ],
             ),
           ],
-        ));
+        ),
+      ),
+    );
   }
 }

@@ -20,7 +20,7 @@ class Categorized extends StatelessWidget {
           ),
         ),
         body: Padding(
-          padding:const EdgeInsets.fromLTRB(10, 0, 10, 0),
+          padding:const EdgeInsets.fromLTRB(8, 0, 8, 0),
           child: Container(
               height: MediaQuery.of(context).size.height * 0.8,
               decoration: BoxDecoration(
@@ -28,7 +28,7 @@ class Categorized extends StatelessWidget {
                       top: BorderSide(color: Colors.grey.shade200, width: 1))),
               child: Column(
                 children: [
-                  const Padding(padding: EdgeInsets.fromLTRB(10, 10, 10, 0)),
+                  const Padding(padding: EdgeInsets.fromLTRB(8, 8, 8, 0)),
                   Expanded(
                     child: GridView.builder(
                       gridDelegate:

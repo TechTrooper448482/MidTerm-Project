@@ -11,23 +11,37 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Gadgets product = Gadgets(description: "",imageUrl: [],specs: '',price:0 ,product: '',product_rating: 0,quantity: 0);
-    return  SingleChildScrollView(
+    Gadgets product = Gadgets(
+        description: "",
+        imageUrl: [],
+        specs: '',
+        price: 0,
+        product: '',
+        product_rating: 0,
+        quantity: 0);
+    return SingleChildScrollView(
       child: Column(
         children: [
           const SafeArea(
-              minimum: EdgeInsets.fromLTRB(20, 20, 20, 0), child: TopBar()),
+            minimum: EdgeInsets.fromLTRB(20, 12, 20, 0),
+            child: TopBar(),
+          ),
           const SafeArea(
-              minimum: EdgeInsets.fromLTRB(20, 12, 20, 0),
-              child: HomeSearchBar()),
+            minimum: EdgeInsets.fromLTRB(20, 12, 20, 0),
+            child: HomeSearchBar(),
+          ),
           const SafeArea(
-              minimum: EdgeInsets.fromLTRB(10, 16, 10, 0), child: PageBanner()),
+            minimum: EdgeInsets.fromLTRB(12, 12, 12, 0),
+            child: PageBanner(),
+          ),
           SafeArea(
-              minimum:const EdgeInsets.fromLTRB(20, 20, 18, 0),
-              child: ProductCategory(product:product)),
+            minimum: const EdgeInsets.fromLTRB(20, 20, 16, 0),
+            child: ProductCategory(product: product),
+          ),
           const SafeArea(
-              minimum: EdgeInsets.fromLTRB(20, 16, 20, 0),
-              child: ProductList()),
+            minimum: EdgeInsets.fromLTRB(20, 12, 20, 0),
+            child: ProductList(),
+          ),
         ],
       ),
     );
